@@ -1,0 +1,26 @@
+1. $$aggregate_pickups_dropoffs$$
+
+Assign the total number of pickups and dropoffs at each intersection.
+
+Output File Info
+
+ 1   unique_intersection_id  8437 non-null   int64  
+ 2   INTERSECTIONID          8437 non-null   int64  
+ 3   FULLINTERSECTION        8437 non-null   object 
+ 4   LONGITUDE               8437 non-null   float64
+ 5   LATITUDE                8437 non-null   float64
+ 6   all_dropoffs            8437 non-null   int64  
+ 7   all_pickups             8437 non-null   int64  
+ 8   morning_dropoffs        8437 non-null   int64  
+ 9   morning_pickups         8437 non-null   int64  
+ 10  late_morning_dropoffs   8437 non-null   int64  
+ 11  late_morning_pickups    8437 non-null   int64  
+ 12  afternoon_dropoffs      8437 non-null   int64  
+ 13  afternoon_pickups       8437 non-null   int64  
+ 14  evening_dropoffs        8437 non-null   int64  
+ 15  evening_pickups         8437 non-null   int64  
+ 16  late_evening_dropoffs   8437 non-null   int64  
+ 17  late_evening_pickups    8437 non-null   int64 
+
+Output File Name
+total_pickups_dropoffs_at_intersections.csv
