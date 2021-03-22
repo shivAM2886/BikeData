@@ -1,6 +1,16 @@
 1. $$aggregate_pickups_dropoffs$$
 
-Assign the total number of pickups and dropoffs at each intersection.
+Assign the total number of pickups and dropoffs at each intersection. 
+
+Basic Logic:
+In the trip dataset we have the start and end location, along with the nearest 
+intersection the start or end location belongs to. We iterate through the trip dataset,
+and store the number of pickups and dropoffs attributed to each of the intersection.
+
+The trip dataset contains all the dockless trips in the year 2019. 
+
+# Note
+</b>Attributing a location to nearest intersection.</b>
 
 Output File Info
 
