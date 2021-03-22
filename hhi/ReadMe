@@ -58,6 +58,7 @@ __________________________________________________
  
 3. calc_hhi.ipynb
 
+Input File Name : "total_pickups_dropoffs_cluster_id_250m_at_intersections.csv"
 Output File Name : "cluster_hhi_results.csv"
 
 Calculates HHI for clusters in Washington DC.  
