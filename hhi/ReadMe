@@ -39,3 +39,36 @@ Output File Info
 
 Output File Name
 total_pickups_dropoffs_at_intersections.csv
+
+___________________________________________________
+
+2. cluster_formation_default_dist_250m.ipynb
+
+Input file Name : total_pickups_dropoffs_at_intersections.csv
+Output File Name : total_pickups_dropoffs_cluster_id_250m_at_intersections.csv
+
+
+Out of the 8437 total intersections in DC, only 2000 of them have appreciable number
+of pickups and dropoffs. Using this file we form cluster of intersections. 
+
+Output file contains 1630 intersections which now have associated cluster ids. Cluster ID points
+out to the ID of central intersection of the cluster.
+
+__________________________________________________
+ 
+3. calc_hhi.ipynb
+
+Output File Name : "cluster_hhi_results.csv"
+
+Calculates HHI for clusters in Washington DC.  
+Output file contains the following columns:
+
+1. cluster_ids	>> Cluster ID for which HHI is calculated.
+2. c_len	      >> Total Intersections in the cluster.
+3. all_c_pickups >> Total pickups from the intersection.	
+4. all_c_dropoffs	>> Total dropoffs from the intersection.
+5. all_phhi	>> PICKUP HHI
+6. all_dhhi >> DROPOFF HHI	
+7. all_hhi_ratio	>> PICKUP HHI / DROPOFF HHI
+
+__________________________________________________
