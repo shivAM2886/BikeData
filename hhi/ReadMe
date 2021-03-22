@@ -10,7 +10,12 @@ and store the number of pickups and dropoffs attributed to each of the intersect
 The trip dataset contains all the dockless trips in the year 2019. 
 
 # Note
-<\b> Attributing a location to nearest intersection. <\b>
+***Attributing a location to nearest intersection***
+The dockless bikes are scattered in different regions, in the project we attribute it to the nearest tarffic intersection.
+Attributing to a nearest traffic intersection means we assume that the pickups and dropoffs originated or ended from the intersection
+instead of the lon and lat location provided in the trip dataset.
+This provides a way for us to divide the city.
+
 
 Output File Info
 
