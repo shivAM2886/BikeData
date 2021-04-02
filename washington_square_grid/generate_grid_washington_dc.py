@@ -44,6 +44,30 @@ class generate_grid:
 
 		return lat3
 
+	def check_lat_side(self, lon, lat):
+		# must be positive
+		lat1 = 38.936229
+		lat2 = 38.841817
+
+		lon1 = -77.113567
+		lon2 = -76.983018
+
+		m = (lat1 - lat2)/(lon1 - lon2)
+		value = (lat - lat1) + m*(lon - lon1)
+		return value
+
+	def check_lon_side(self, lon, lat):
+		# must be positive
+		lat1 = 38.892870
+		lat2 = 38.841817
+
+		lon1 = -76.90939
+		lon2 = -76.983018
+
+		m = (lat1 - lat2)/(lon1 - lon2)
+		value = (lat - lat1) + m * (lon - lon1)
+		return value
+
 	def modify_datastruct(self, square_array):
 		lon1_series = []
 		lat1_series = []
@@ -75,10 +99,10 @@ class generate_grid:
 		lon1 = start_lon
 		lat1 = start_lat
 
-		while lat1 > self.lat_boundary2:
+		while self.check_lat_side(lon1, lat1) > 0:
 			lat3 = self.get_lat3 (lon1, lat1)
 
-			while lon1 < self.lon_boundary2:
+			while self.check_lon_side(lon1, lat1) > 0:
 				lon3 = self.get_lon3(lon1, lat1)
 				temp_square_coordinates = [(lon1, lat1), (lon3, lat3)]
 				square_array.append(temp_square_coordinates)
@@ -89,7 +113,7 @@ class generate_grid:
 
 		df_result = self.modify_datastruct(square_array)
 
-		return df_results
+		return df_result
 
 
 
