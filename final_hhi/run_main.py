@@ -5,7 +5,7 @@ from main1_class import hhi_main1
 # select "square" for square boundary and put the required square length as additional_params.
 # (center of circle and square is the reference intersection)
 
-# select "nearest_neighbor" to get the hhi_ratio for using the nearest intersections and add
+# select "nearest_neighbor" to get the hhi_ratio using the nearest intersections and add
 # total number of nearest neighbor as additional_params.
 
 
