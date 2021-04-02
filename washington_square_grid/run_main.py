@@ -1,4 +1,4 @@
-from generate_grid_washington_dc2 import generate_grid
+from generate_grid_washington_dc import generate_grid
 
 # grid size in meters
 
